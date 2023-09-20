@@ -63,5 +63,38 @@ let myObj={
 }
 
 const myFunction= function(){
-    console.log("hello world")
+    // console.log("hello world")
 }
+
+
+
+
+
+/******************************** Memories *************************************/
+
+//Stack(Primitive), Heap(non-primitive)
+
+//primitive(gives copy of the varaiable)
+
+let myName="ayush"
+
+let nickName=myName
+nickName="shanu"
+
+console.log(myName)      //op: ayush
+console.log(nickName)   //op: shanu
+
+
+//non-primitive(gives reference of the variable)
+
+let userOne={
+    email:"ayu@mail.com",
+    age:21
+}
+
+let userTwo=userOne
+
+userTwo.email="shanu@mail.com"
+
+console.log(userOne.email)    //op:shanu@mail.com
+console.log(userTwo.email)   //op:shanu@mail.com
