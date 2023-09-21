@@ -11,7 +11,7 @@ const gameName=new String('ayush-legit')
 //and we can access each single character
 console.log(gameName[0])
 
-//by using the above method for defining the string we can use various prototypes
+//by using the above method for defining the string we can use various string properties
 console.log(gameName.__proto__);
 
 
