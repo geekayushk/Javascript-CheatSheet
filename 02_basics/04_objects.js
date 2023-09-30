@@ -50,12 +50,26 @@ const users = [
 ];
 // console.log(users[0].email);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
+// console.log(Object.keys(tinderUser));
 //only keys of tinderUser are returned as an array
-console.log(Object.values(tinderUser));
+// console.log(Object.values(tinderUser));
 //only values of tinderUser are returned as an array
-console.log(Object.entries(tinderUser));
+// console.log(Object.entries(tinderUser));
 //less used but returned in key-value pair as an array
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+/**********************  Object De-structure  *********************/
+const course = {
+  courseName: "js cheatsheet",
+  price: "999",
+  courseInstructor: "ayush",
+};
+
+// course.courseInstructor
+
+//another way of accessing object values
+const { courseInstructor: instructor } = course;
+// console.log(courseInstructor);
+console.log(instructor);
