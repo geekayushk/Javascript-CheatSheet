@@ -123,3 +123,10 @@ fetch('https://api.github.com/users/geekayushk')
     .catch((error) => {
         console.log(error)
     })
+
+
+
+//NOTE
+//as you can see the fetch function is printing first before all the functions defined above. why?
+// fetch keeps all the tasks into "micro task queue or priority queue", so it gets executed first and as it return promises (so it has more priority and thats why it is sent to stack first as compared to other)
+// while other functions keeps all the tasks in task queue and at the time of executing it get transferred to stack
